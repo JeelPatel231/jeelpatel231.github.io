@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script>
+
+document.onreadystatechange = function() { 
+    if (document.readyState !== "complete") { 
+        document.querySelector(".wiper").style.animation = "loader-loop 1s ease infinite";
+        document.getElementById("hugecontainer").style.display = "none";
+
+    } 
+    else { 
+        document.querySelector(".wiper").style.display = "none";
+        document.getElementById("hugecontainer").style.display = "block";
+    } 
+}; 
+
+            function menu(){
+                document.querySelector("#navbar").classList.toggle("menureveal");
+            }
+
+        </script>
+        <title>RohieOS | Home</title>
+    </head>
+    <body bgcolor="#121212">
+        <div id="background"><div class="wiper"></div></div>
+       <div id="hugecontainer">
+           
+        <div id="navbar" class="menuhide">
+            <ul style="list-style: none;">
+                <li style="padding: 0 0 6px 20px;font-family: ProductSans;display: inline-flex;"><img class="logo" src="cat-purpure.png"></img><div style="padding: 3px 0 0 10px;"> Rohie OS </div></li>
+
+                <div id="hamburger" onclick="menu()"></div>
+
+                <div class="menu">
+                    <a href="#aboutus"><li>Home</li></a>
+                    <a href="#features"><li>Features</li></a>
+                    <a href="#romstats"><li>Stats</li></a>
+                    <a href="#ContactUS"><li>Contact</li></a>
+                </div>
+
+                
+            </ul>
+        </div>
+
+
+        <div id="aboutus">
+
+        <div class="text heading"> Rohie OS </div>
+        <div class="text subtitle"><img height="50px" src="androidpowered.png"></div>
+        <div style="border:2px solid #fff;" class="text textbox subtitle2">
+        Hey There,<br><br>
+Starting With Android 11 R, We Gonna Start Working On Rohie OS With Fresh New Look and Upto Date Features with Minimalistic sources.<br>
+
+Cat Lovers Will Love This Rom as Everything In it Will Be Based on Kittens 😼. 
+<a href="https://t.me/rohieos">@RohieOS</a> <br><br>
+
+This is an replacement to SlimAOSP which got abandoned few months ago before a stable release. So, after getting so much love for slimaosp i thought of reviving the rom again with fresh new look and features. <a href="https://t.me/SlimAOSP">@SlimAOSP</a> <br><br>
+
+Thanks.<br><br>
+
+Stay Safe.<br>
+</div>
+</div>
+
+<div id="features">
+
+    <center><div class="breaker"></div></center>
+
+    <div class="text heading2">Features</div>
+    <div class="text textbox subtitle2">
+        <ul>
+            <li>feature x</li>
+            <li>feature x</li>
+            <li>feature x</li>
+            <li>feature x</li>
+            <li>feature x</li>
+            <li>feature x</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div id="romstats">
+    <center><div class="breaker"></div></center>
+    <div class="text heading2"> Rom Stats</div>
+    <div class="text textbox subtitle2">
+        <ul>
+            <li>insert no. of downloads here</li>
+            <li>insert number of devices supported</li>
+            <li>insert something else</li>
+            <li>insert some screen shots of customisations</li>
+        </ul>
+    </div>
+
+</div>
+
+
+
+<div id="ContactUS">
+    <center><div class="breaker"></div></center>
+    <div class="text heading2">Contact Us</div>
+    <div class="text textbox subtitle2">
+        <ul>
+            <li>< Email icon with link ></li>
+            <li>< a telegram button ></li>
+            <li>< github button with source code link ></li>
+        </ul>
+    </div>
+</div>
+
+
+</div>
+
+</body>
+</html>
